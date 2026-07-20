@@ -7,14 +7,17 @@
 mkDB(new_students, studentDB = NULL, updateDB = FALSE)
 }
 \arguments{
-\item{new_students, }{a character string indicating the path of excel file containing the new students}
+\item{new_students, }{a character string indicating the path and the excel file containing the new students}
 
 \item{studentDB, }{a character string indicating the path of csv file containing the previous set of students}
 
 \item{updateDB, }{a logical FALSE, this is a new db to be built from scratch and save in studentDB, TRUE update the db at studentDB, this is done every new year whne new students are incoming}
 }
+\value{
+It returns a student database populated with the new students every new year
+}
 \description{
-This function is is design to create a students csv file with the 4 score initialised as NA.
+This function is designed to create a students csv file with the 4 score initialised as NA.
 }
 \examples{
 \dontrun{
