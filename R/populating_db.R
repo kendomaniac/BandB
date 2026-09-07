@@ -31,7 +31,7 @@ populatingDB = function(norm_score, studentDB, type=c("bioc","bm","gen","biol"))
       tmp_set$bioc = shrinked_df$Esito
       tmp_set$cfu = shrinked_df$CFU
     } else{
-      return("We have a problem: the exam matricola is not aligned with the studentDB matricola")
+      stop("\nWe have a problem: the exam matricola is not aligned with the studentDB matricola\n")
     }
   } else if(type == "bm"){
     shrinked_df = shrinked_df[order(as.character(shrinked_df$Matricola)),]
@@ -43,7 +43,7 @@ populatingDB = function(norm_score, studentDB, type=c("bioc","bm","gen","biol"))
       tmp_set$bm = shrinked_df$Esito
       tmp_set$cfu = shrinked_df$CFU
     } else{
-      return("We have a problem: the exam matricola is not aligned wiht the studentDB matricola")
+      stop("\nWe have a problem: the exam matricola is not aligned with the studentDB matricola\n")
     }
   } else if(type == "gen"){
     shrinked_df = shrinked_df[order(as.character(shrinked_df$Matricola)),]
@@ -55,7 +55,7 @@ populatingDB = function(norm_score, studentDB, type=c("bioc","bm","gen","biol"))
       tmp_set$gen = shrinked_df$Esito
       tmp_set$cfu = shrinked_df$CFU
     } else{
-      return("We have a problem: the exam matricola is not aligned with the studentDB matricola")
+      stop("\nWe have a problem: the exam matricola is not aligned with the studentDB matricola\n")
     }
   } else if(type == "biol"){
     shrinked_df = shrinked_df[order(as.character(shrinked_df$Matricola)),]
@@ -67,7 +67,7 @@ populatingDB = function(norm_score, studentDB, type=c("bioc","bm","gen","biol"))
       tmp_set$biol = shrinked_df$Esito
       tmp_set$cfu = shrinked_df$CFU
     } else{
-      return("We have a problem: the exam matricola is not aligned with the studentDB matricola")
+      stop("\nWe have a problem: the exam matricola is not aligned with the studentDB matricola\n")
     }
   }
   updated_df = rbind(tmp_set, other_set)

@@ -1,6 +1,6 @@
 Package: BandB
 Title: What the Package Does (One Line, Title Case)
-Version: 1.0.0.0
+Version: 1.0.0.1
 Authors@R: person("Raffaele", "Calogero", email = "raffaele.calogero@gmail.com", role = c("aut", "cre"))
 Description: Tool per aggregare prove parziali di Biochimica e Biologia II semestre I anno Corso di laurea di Medicnia Torino.
 License: MIT + file LICENSE
